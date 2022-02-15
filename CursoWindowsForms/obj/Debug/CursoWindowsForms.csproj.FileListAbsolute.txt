@@ -115,3 +115,5 @@ C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsFor
 C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsForms\obj\Debug\CursoWindowsForms.csproj.CopyComplete
 C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsForms\obj\Debug\CursoWindowsForms.exe
 C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsForms\obj\Debug\CursoWindowsForms.pdb
+C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsForms\bin\Debug\Databases\Fichario.mdf
+C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsForms\bin\Debug\Databases\Fichario_log.ldf

@@ -64,6 +64,8 @@
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Cls_Uteis.cs" />
     <Compile Include="Databases\Fichario.cs" />
+    <Compile Include="Databases\FicharioDB.cs" />
+    <Compile Include="Databases\LocalDBClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
