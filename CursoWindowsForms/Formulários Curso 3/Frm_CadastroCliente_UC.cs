@@ -128,7 +128,8 @@ namespace CursoWindowsForms
                 C.ValidaClasse();
                 C.ValidaComplemento();
                 //C.IncluirFichario("C:\\Users\\wande\\Desktop\\MyProjects\\Curso-WForms\\CursoWindowsForms\\Fichario");
-                C.IncluirFicharioDB("Cliente");
+                //C.IncluirFicharioDB("Cliente");
+                C.IncluirFicharioSQL("Cliente");
                 MessageBox.Show("OK: Indentificador incluido com sucesso", "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //string clienteJson = Cliente.SerializedClassUnit(C);
@@ -173,7 +174,9 @@ namespace CursoWindowsForms
                 {
                     Cliente.Unit C = new Cliente.Unit();
                     //C = C.BuscarFichario(Txt_Codigo.Text, "C:\\Users\\wande\\Desktop\\MyProjects\\Curso-WForms\\CursoWindowsForms\\Fichario");
-                    C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    //C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    C = C.BuscarFicharioSQL(Txt_Codigo.Text, "Cliente");
+
 
                     if (C == null)
                     {
@@ -221,7 +224,8 @@ namespace CursoWindowsForms
                     C.ValidaClasse();
                     C.ValidaComplemento();
                     //C.AlterarFichario("C:\\WindowsForms\\Curso\\CursoWindowsForms\\Fichario");
-                    C.AlterarFicharioDB("Cliente");
+                    //C.AlterarFicharioDB("Cliente");
+                    C.AlterarFicharioSQL("Cliente");
                     MessageBox.Show("OK: Indentificador alterado com sucesso", "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     //string clienteJson = Cliente.SerializedClassUnit(C);
@@ -268,7 +272,8 @@ namespace CursoWindowsForms
                 {
                     Cliente.Unit C = new Cliente.Unit();
                     //C = C.BuscarFichario(Txt_Codigo.Text, "C:\\Users\\wande\\Desktop\\MyProjects\\Curso-WForms\\CursoWindowsForms\\Fichario");
-                    C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    //C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    C = C.BuscarFicharioSQL(Txt_Codigo.Text, "Cliente");
                     if (C == null)
                     {
                         MessageBox.Show("Identificador não encontrado.", "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -281,7 +286,8 @@ namespace CursoWindowsForms
                         if (Db.DialogResult == DialogResult.Yes)
                         {
 
-                            C.ApagarFicharioDB("Cliente");
+                            //C.ApagarFicharioDB("Cliente");
+                            C.ApagarFicharioSQL("Cliente");
                             //C.ApagarFichario("C:\\Users\\wande\\Desktop\\MyProjects\\Curso-WForms\\CursoWindowsForms\\Fichario");
                             MessageBox.Show("OK: Indentificador apagado com sucesso", "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             LimparFormulario();
@@ -488,14 +494,16 @@ namespace CursoWindowsForms
             try
             {
                 Cliente.Unit C = new Cliente.Unit();
-                var ListaBusca = C.BuscarFicharioDBTodosDB("Cliente");
+                //var ListaBusca = C.BuscarFicharioDBTodosDB("Cliente");
+                var ListaBusca = C.BuscarFicharioSQL("Cliente");
                 //var ListaBusca = C.BuscarFicharioTodos("C:\\Users\\wande\\Desktop\\MyProjects\\Curso-WForms\\CursoWindowsForms\\Fichario");
                 Frm_Busca FForm = new Frm_Busca(ListaBusca);
                 FForm.ShowDialog();
                 if (FForm.DialogResult == DialogResult.OK)
                 {
                     var idSelect = FForm.idSelect;
-                    C = C.BuscarFicharioDB(idSelect, "Cliente");
+                    C = C.BuscarFicharioSQL(idSelect, "Cliente");
+                    //C = C.BuscarFicharioDB(idSelect, "Cliente");
                     //C = C.BuscarFichario(idSelect, "C:\\Users\\wande\\Desktop\\MyProjects\\Curso-WForms\\CursoWindowsForms\\Fichario");
                     if (C == null)
                     {

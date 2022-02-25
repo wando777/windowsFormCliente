@@ -27,3 +27,4 @@ C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsFor
 C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb
 C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Databases\Fichario.mdf
 C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Databases\Fichario_log.ldf
+C:\Users\wande\Desktop\MyProjects\Curso-WForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll.config
